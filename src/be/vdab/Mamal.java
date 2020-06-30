@@ -1,6 +1,6 @@
 package be.vdab;
 
-public abstract class Mamal extends Animal {
+public abstract class Mamal extends Animal implements Breathable {
 
     private boolean canSwim;
     private int numberOfLegs;
@@ -19,5 +19,10 @@ public abstract class Mamal extends Animal {
 
     public void setNumberOfLegs(int numberOfLegs) {
         this.numberOfLegs = numberOfLegs;
+    }
+
+    @Override
+    public void breathe() {
+        System.out.println("Mamal breathes go HU HU");
     }
 }
